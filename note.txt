@@ -1,1 +1,15 @@
+http://localhost:3000/api/pokemons/2/pikachu/feu
+pour demarrer node js, npm start
 j'en suis a 1.14.48 du node js tutorial ^^
+
+req = request
+res = response
+
+Attention au ParseInt, différence entre le retour en nombre et le retour en chaine de charactère.
+Pour retourner une reponse au format JSON et lui ajouter le type MIME : res.json, ensuite on passe un objet javascript, réponse HHTP grace a res, methode json, et variable pokemons
+Les middlewarre sont des fonctions Javascript qui ont accées a Express.
+Les middlewares d'Express sont des fonctions qui peuvent être ajoutées à la chaîne de traitement de requêtes (request) et de réponses (response) d'une application Express.
+
+Ces fonctions interviennent entre la réception de la requête et l'envoi de la réponse. Elles peuvent effectuer des opérations telles que la validation de la requête, l'ajout de données à la requête ou la réponse, le traitement des erreurs, l'authentification et l'autorisation, etc.
+
+Les middlewares sont ajoutés à une application Express à l'aide de la méthode use(). La méthode use() prend en argument une ou plusieurs fonctions middleware et les ajoute à la chaîne de traitement. Les fonctions middleware sont exécutées dans l'ordre dans lequel elles sont ajoutées à l'application.
